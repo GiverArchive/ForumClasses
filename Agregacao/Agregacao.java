@@ -17,6 +17,11 @@ public class Agregacao {
     turma.adicionarAluno(fabio);
     turma.adicionarAluno(luana);
 
-    System.out.println("Alunos da turma: " + turma.getAlunos());
+    System.out.println("Alunos da turma de Engenharia: " + turma.getAlunos());
+
+    // Observe que podemos usar os alunos em outras turmas
+    Turma turma = new Turma("Sociologia");
+    turma.adicionarAluno(ana);
+    turma.adicionarAluno(fabio);
   }
 }
